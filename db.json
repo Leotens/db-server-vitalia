@@ -1,0 +1,613 @@
+{
+  "schedulingDoctors": [
+    {
+      "id": "doc-001",
+      "fullName": "Dr. Elena Rodriguez",
+      "specialty": "Senior Cardiologist",
+      "branchId": "branch-001"
+    },
+    {
+      "id": "doc-002",
+      "fullName": "Dr. Marcus Liao",
+      "specialty": "Neurological Screening",
+      "branchId": "branch-001"
+    },
+    {
+      "id": "doc-003",
+      "fullName": "Dr. Sarah Weaver",
+      "specialty": "General Wellness Check",
+      "branchId": "branch-001"
+    },
+    {
+      "id": "doc-004",
+      "fullName": "Dr. James Peterson",
+      "specialty": "Physical Therapy",
+      "branchId": "branch-001"
+    }
+  ],
+  "schedulingPatients": [
+    {
+      "id": "pat-001",
+      "fullName": "Alex Mercer",
+      "insuranceProvider": "HealthPlus"
+    },
+    {
+      "id": "pat-002",
+      "fullName": "Sarah Jenkins",
+      "insuranceProvider": "HealthPlus"
+    },
+    {
+      "id": "pat-003",
+      "fullName": "Mark Thompson",
+      "insuranceProvider": "MediCare"
+    },
+    {
+      "id": "pat-004",
+      "fullName": "James Chen",
+      "insuranceProvider": "MediCare"
+    },
+    {
+      "id": "pat-005",
+      "fullName": "Eleanor Vance",
+      "insuranceProvider": "HealthPlus"
+    },
+    {
+      "id": "pat-006",
+      "fullName": "Arthur Miller",
+      "insuranceProvider": "MediCare"
+    },
+    {
+      "id": "pat-007",
+      "fullName": "Julian Brooks",
+      "insuranceProvider": "CareOne"
+    },
+    {
+      "id": "pat-008",
+      "fullName": "Clara Oswald",
+      "insuranceProvider": "HealthPlus"
+    }
+  ],
+  "schedulingBranches": [
+    {
+      "id": "branch-001",
+      "name": "Main Medical Plaza",
+      "description": "Diagnostic Wing B"
+    }
+  ],
+  "schedulingAvailabilitySlots": [
+    {
+      "id": "slot-001",
+      "doctorId": "doc-001",
+      "branchId": "branch-001",
+      "date": "2026-04-24",
+      "startTime": "09:30",
+      "endTime": "10:00",
+      "status": "available"
+    },
+    {
+      "id": "slot-002",
+      "doctorId": "doc-002",
+      "branchId": "branch-001",
+      "date": "2026-04-27",
+      "startTime": "11:00",
+      "endTime": "11:30",
+      "status": "available"
+    },
+    {
+      "id": "slot-003",
+      "doctorId": "doc-003",
+      "branchId": "branch-001",
+      "date": "2026-06-10",
+      "startTime": "15:15",
+      "endTime": "15:45",
+      "status": "available"
+    },
+    {
+      "id": "slot-004",
+      "doctorId": "doc-001",
+      "branchId": "branch-001",
+      "date": "2026-05-12",
+      "startTime": "16:00",
+      "endTime": "16:30",
+      "status": "booked"
+    },
+    {
+      "id": "slot-005",
+      "doctorId": "doc-002",
+      "branchId": "branch-001",
+      "date": "2026-05-14",
+      "startTime": "10:30",
+      "endTime": "11:00",
+      "status": "booked"
+    },
+    {
+      "id": "slot-006",
+      "doctorId": "doc-003",
+      "branchId": "branch-001",
+      "date": "2026-05-15",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "status": "booked"
+    },
+    {
+      "id": "8a1b163d-a15d-40f9-a136-730a4dd2bae9",
+      "doctorId": "doc-004",
+      "branchId": "branch-001",
+      "date": "2026-05-12",
+      "startTime": "08:00",
+      "endTime": "08:30",
+      "status": "booked"
+    },
+    {
+      "id": "c0d6ceee-f26e-441c-af28-c002466e3310",
+      "doctorId": "doc-004",
+      "branchId": "branch-001",
+      "date": "2026-05-12",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "status": "available"
+    },
+    {
+      "id": "087b303d-5231-4554-9415-086a0171af97",
+      "doctorId": "doc-001",
+      "branchId": "branch-001",
+      "date": "2026-04-24",
+      "startTime": "11:00",
+      "endTime": "11:30",
+      "status": "booked"
+    },
+    {
+      "id": "a145580e-c559-47d2-b321-b630295d1d57",
+      "doctorId": "doc-003",
+      "branchId": "branch-001",
+      "date": "2026-05-12",
+      "startTime": "12:00",
+      "endTime": "12:30",
+      "status": "available"
+    },
+    {
+      "id": "519f6cf7-73b5-41f9-a664-29b748601ce1",
+      "doctorId": "doc-003",
+      "branchId": "branch-001",
+      "date": "2026-05-12",
+      "startTime": "13:00",
+      "endTime": "13:30",
+      "status": "booked"
+    }
+  ],
+  "schedulingAppointments": [
+    {
+      "id": "apt-001",
+      "doctorId": "doc-001",
+      "patientId": "pat-001",
+      "branchId": "branch-001",
+      "scheduledAt": "2026-04-24T09:30:00",
+      "reason": "Advanced Cardiology Consultation",
+      "status": "cancelled",
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "apt-002",
+      "doctorId": "doc-001",
+      "patientId": "pat-002",
+      "branchId": "branch-001",
+      "scheduledAt": "2026-04-24T11:00:00",
+      "reason": "Diabetes Screening",
+      "status": "released",
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "apt-003",
+      "doctorId": "doc-001",
+      "patientId": "pat-003",
+      "branchId": "branch-001",
+      "scheduledAt": "2026-04-24T14:00:00",
+      "reason": "Cardiology Review",
+      "status": "arrived",
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "apt-004",
+      "doctorId": "doc-002",
+      "patientId": "pat-001",
+      "branchId": "branch-001",
+      "scheduledAt": "2026-05-14T10:30:00",
+      "reason": "Neurological Screening",
+      "status": "cancelled",
+      "paymentStatus": "pending"
+    },
+    {
+      "id": "apt-005",
+      "doctorId": "doc-003",
+      "patientId": "pat-001",
+      "branchId": "branch-001",
+      "scheduledAt": "2026-06-10T15:15:00",
+      "reason": "General Wellness Check",
+      "status": "cancelled",
+      "paymentStatus": "pending"
+    },
+    {
+      "id": "apt-006",
+      "doctorId": "doc-004",
+      "patientId": "pat-001",
+      "branchId": "branch-001",
+      "scheduledAt": "2026-06-12T09:00:00",
+      "reason": "Physical Therapy",
+      "status": "cancelled",
+      "paymentStatus": "refunded"
+    },
+    {
+      "id": "1856ba33-0768-4189-b8c7-e61412e12c13",
+      "doctorId": "doc-001",
+      "patientId": "pat-001",
+      "branchId": "branch-001",
+      "scheduledAt": "2026-04-24T09:30:00",
+      "reason": "General consultation",
+      "status": "cancelled",
+      "paymentStatus": "pending"
+    },
+    {
+      "id": "80246866-4aed-4675-99d1-d03b89654dc0",
+      "doctorId": "doc-001",
+      "patientId": "pat-001",
+      "branchId": "branch-001",
+      "scheduledAt": "2026-04-24T09:30:00",
+      "reason": "General consultation",
+      "status": "released",
+      "paymentStatus": "pending"
+    },
+    {
+      "id": "67443c08-d81b-4458-9bc1-a3142ef7b714",
+      "doctorId": "doc-003",
+      "patientId": "pat-001",
+      "branchId": "branch-001",
+      "scheduledAt": "2026-05-15T09:00:00",
+      "reason": "General consultation",
+      "status": "scheduled",
+      "paymentStatus": "pending"
+    },
+    {
+      "id": "02caea11-7484-41ee-8015-3da5e7a8905e",
+      "doctorId": "doc-001",
+      "patientId": "pat-001",
+      "branchId": "branch-001",
+      "scheduledAt": "2026-05-12T16:00:00",
+      "reason": "General consultation",
+      "status": "scheduled",
+      "paymentStatus": "pending"
+    },
+    {
+      "id": "56580f78-5343-49e5-828a-5a4aa9c9673c",
+      "doctorId": "doc-004",
+      "patientId": "pat-001",
+      "branchId": "branch-001",
+      "scheduledAt": "2026-05-12T08:00:00",
+      "reason": "General consultation",
+      "status": "scheduled",
+      "paymentStatus": "pending"
+    },
+    {
+      "id": "e3791da4-280a-49b0-a314-609cd94d758c",
+      "doctorId": "doc-002",
+      "patientId": "pat-001",
+      "branchId": "branch-001",
+      "scheduledAt": "2026-05-14T10:30:00",
+      "reason": "General consultation",
+      "status": "scheduled",
+      "paymentStatus": "pending"
+    },
+    {
+      "id": "d51fe3d0-467b-4e98-8cce-6b120ea23eed",
+      "doctorId": "doc-003",
+      "patientId": "pat-001",
+      "branchId": "branch-001",
+      "scheduledAt": "2026-05-12T13:00:00",
+      "reason": "General consultation",
+      "status": "scheduled",
+      "paymentStatus": "pending"
+    },
+    {
+      "id": "apt-101",
+      "doctorId": "doc-001",
+      "patientId": "pat-005",
+      "branchId": "branch-001",
+      "scheduledAt": "2026-05-11T08:30:00",
+      "reason": "Critical follow-up",
+      "status": "confirmed",
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "apt-102",
+      "doctorId": "doc-001",
+      "patientId": "pat-006",
+      "branchId": "branch-001",
+      "scheduledAt": "2026-05-11T09:45:00",
+      "reason": "Blood pressure control",
+      "status": "arrived",
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "apt-103",
+      "doctorId": "doc-001",
+      "patientId": "pat-007",
+      "branchId": "branch-001",
+      "scheduledAt": "2026-05-11T11:20:00",
+      "reason": "Post-op review",
+      "status": "scheduled",
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "apt-104",
+      "doctorId": "doc-001",
+      "patientId": "pat-008",
+      "branchId": "branch-001",
+      "scheduledAt": "2026-05-11T15:10:00",
+      "reason": "Medication adjustment",
+      "status": "confirmed",
+      "paymentStatus": "paid"
+    }
+  ],
+  "clinicalMedicalRecords": [
+    {
+      "id": "mr-101",
+      "code": "HCE-90210",
+      "id_patient": "pat-005",
+      "id_appointment": "apt-101",
+      "updated_at": "2026-05-11T08:42:00"
+    },
+    {
+      "id": "mr-102",
+      "code": "HCE-88211",
+      "id_patient": "pat-006",
+      "id_appointment": "apt-102",
+      "updated_at": "2026-05-11T09:58:00"
+    },
+    {
+      "id": "mr-103",
+      "code": "HCE-45129",
+      "id_patient": "pat-007",
+      "id_appointment": "apt-103",
+      "updated_at": "2026-05-11T11:30:00"
+    },
+    {
+      "id": "mr-104",
+      "code": "HCE-11200",
+      "id_patient": "pat-008",
+      "id_appointment": "apt-104",
+      "updated_at": "2026-05-11T15:22:00"
+    },
+    {
+      "id": "mr-095",
+      "code": "HCE-90210-2024",
+      "id_patient": "pat-001",
+      "id_appointment": "apt-001",
+      "updated_at": "2024-02-15T10:15:00"
+    },
+    {
+      "id": "mr-096",
+      "code": "HCE-90210-2025",
+      "id_patient": "pat-001",
+      "id_appointment": null,
+      "updated_at": "2025-01-18T09:20:00"
+    },
+    {
+      "id": "mr-098",
+      "code": "HCE-90210-NEURO",
+      "id_patient": "pat-001",
+      "id_appointment": "apt-004",
+      "updated_at": "2026-04-27T11:22:00"
+    },
+    {
+      "id": "mr-099",
+      "code": "HCE-90210-WELLNESS",
+      "id_patient": "pat-001",
+      "id_appointment": "apt-005",
+      "updated_at": "2026-06-10T15:42:00"
+    },
+    {
+      "id": "mr-097",
+      "code": "HCE-88211-2025",
+      "id_patient": "pat-006",
+      "id_appointment": null,
+      "updated_at": "2025-09-04T12:30:00"
+    }
+  ],
+  "clinicalDiagnoses": [
+    {
+      "id": "diag-101",
+      "id_medical_record": "mr-101",
+      "description": "Critical follow-up"
+    },
+    {
+      "id": "diag-102",
+      "id_medical_record": "mr-102",
+      "description": "Stable"
+    },
+    {
+      "id": "diag-103",
+      "id_medical_record": "mr-103",
+      "description": "Post-op review"
+    },
+    {
+      "id": "diag-104",
+      "id_medical_record": "mr-104",
+      "description": "Medication adjustment"
+    },
+    {
+      "id": "diag-095",
+      "id_medical_record": "mr-095",
+      "description": "Cardiology control"
+    },
+    {
+      "id": "diag-096",
+      "id_medical_record": "mr-096",
+      "description": "Hypertension follow-up"
+    },
+    {
+      "id": "diag-097",
+      "id_medical_record": "mr-097",
+      "description": "Stable blood pressure"
+    },
+    {
+      "id": "diag-098",
+      "id_medical_record": "mr-098",
+      "description": "Neurological screening without acute findings"
+    },
+    {
+      "id": "diag-099",
+      "id_medical_record": "mr-099",
+      "description": "General wellness follow-up"
+    }
+  ],
+  "clinicalTreatments": [
+    {
+      "id": "treat-101",
+      "id_medical_record": "mr-101",
+      "description": "Review labs and update care plan"
+    },
+    {
+      "id": "treat-102",
+      "id_medical_record": "mr-102",
+      "description": "Routine medication control"
+    },
+    {
+      "id": "treat-103",
+      "id_medical_record": "mr-103",
+      "description": "Surgical wound progress check"
+    },
+    {
+      "id": "treat-104",
+      "id_medical_record": "mr-104",
+      "description": "Medication adherence review"
+    },
+    {
+      "id": "treat-095",
+      "id_medical_record": "mr-095",
+      "description": "Electrocardiogram review and lifestyle plan"
+    },
+    {
+      "id": "treat-096",
+      "id_medical_record": "mr-096",
+      "description": "Continue antihypertensive treatment"
+    },
+    {
+      "id": "treat-097",
+      "id_medical_record": "mr-097",
+      "description": "Routine medication control"
+    },
+    {
+      "id": "treat-098",
+      "id_medical_record": "mr-098",
+      "description": "Observation and follow-up if symptoms continue"
+    },
+    {
+      "id": "treat-099",
+      "id_medical_record": "mr-099",
+      "description": "Lifestyle plan and preventive check in six months"
+    }
+  ],
+  "clinicalPrescriptions": [
+    {
+      "id": "rx-101",
+      "id_medical_record": "mr-101",
+      "date": "2026-05-11"
+    },
+    {
+      "id": "rx-102",
+      "id_medical_record": "mr-102",
+      "date": "2026-05-11"
+    },
+    {
+      "id": "rx-103",
+      "id_medical_record": "mr-103",
+      "date": "2026-05-11"
+    },
+    {
+      "id": "rx-095",
+      "id_medical_record": "mr-095",
+      "date": "2024-02-15"
+    },
+    {
+      "id": "rx-096",
+      "id_medical_record": "mr-096",
+      "date": "2025-01-18"
+    },
+    {
+      "id": "rx-099",
+      "id_medical_record": "mr-099",
+      "date": "2026-06-10"
+    }
+  ],
+  "clinicalPrescriptionDetails": [
+    {
+      "id": "rxd-101",
+      "id_prescription": "rx-101",
+      "id_medicine": "Paracetamol",
+      "medicine_name": "Paracetamol",
+      "dose": 500,
+      "dose_unit_type": "mg",
+      "frequency": "1 cada 8 horas",
+      "duration": "5 dias"
+    },
+    {
+      "id": "rxd-102",
+      "id_prescription": "rx-101",
+      "id_medicine": "Ibuprofeno",
+      "medicine_name": "Ibuprofeno",
+      "dose": 400,
+      "dose_unit_type": "mg",
+      "frequency": "1 cada 12 horas",
+      "duration": "3 dias"
+    },
+    {
+      "id": "rxd-103",
+      "id_prescription": "rx-102",
+      "id_medicine": "Losartan",
+      "medicine_name": "Losartan",
+      "dose": 50,
+      "dose_unit_type": "mg",
+      "frequency": "1 diaria",
+      "duration": "30 dias"
+    },
+    {
+      "id": "rxd-104",
+      "id_prescription": "rx-103",
+      "id_medicine": "Omeprazol",
+      "medicine_name": "Omeprazol",
+      "dose": 20,
+      "dose_unit_type": "mg",
+      "frequency": "1 en ayunas",
+      "duration": "14 dias"
+    },
+    {
+      "id": "rxd-095",
+      "id_prescription": "rx-095",
+      "id_medicine": "Atorvastatina",
+      "medicine_name": "Atorvastatina",
+      "dose": 20,
+      "dose_unit_type": "mg",
+      "frequency": "1 diaria",
+      "duration": "30 dias"
+    },
+    {
+      "id": "rxd-096",
+      "id_prescription": "rx-096",
+      "id_medicine": "Losartan",
+      "medicine_name": "Losartan",
+      "dose": 50,
+      "dose_unit_type": "mg",
+      "frequency": "1 diaria",
+      "duration": "30 dias"
+    },
+    {
+      "id": "rxd-099",
+      "id_prescription": "rx-099",
+      "id_medicine": "Vitamina D",
+      "medicine_name": "Vitamina D",
+      "dose": 1000,
+      "dose_unit_type": "IU",
+      "frequency": "1 diaria",
+      "duration": "60 dias"
+    }
+  ]
+}
